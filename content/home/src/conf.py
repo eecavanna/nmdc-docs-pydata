@@ -134,8 +134,8 @@ html_context = {
 #
 # Reference: https://pypi.org/project/sphinxcontrib-googleanalytics/
 #
-googleanalytics_id: str = "G-VH6HKVLCWN"
-googleanalytics_enabled: bool = True
+googleanalytics_id: str = ""
+googleanalytics_enabled: bool = False
 
 # -- PyData theme for Sphinx ------------------------------
 #

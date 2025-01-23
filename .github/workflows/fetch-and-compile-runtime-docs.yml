@@ -64,10 +64,7 @@ jobs:
             "site_url": "https://docs.microbiomedata.org/runtime/",
             "theme": {"favicon": "assets/images/favicon.ico"},
             "extra": {
-              "analytics": {
-                "provider": "google",
-                "property": "G-VH6HKVLCWN"
-              }
+              "analytics": {}
             }
           }' | mkdocs build -f -
         # Upload the result as an "artifact" so it can then be downloaded and used by another job.
