@@ -134,7 +134,7 @@ html_context = {
 #
 # Reference: https://pypi.org/project/sphinxcontrib-googleanalytics/
 #
-googleanalytics_id: str = ""
+googleanalytics_id: str = "__REPLACE_ME__"
 googleanalytics_enabled: bool = False
 
 # -- PyData theme for Sphinx ------------------------------

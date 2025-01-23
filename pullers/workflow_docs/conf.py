@@ -62,5 +62,5 @@ extensions = [
 #
 # Reference: https://pypi.org/project/sphinxcontrib-googleanalytics/
 #
-googleanalytics_id: str = ""
+googleanalytics_id: str = "__REPLACE_ME__"
 googleanalytics_enabled: bool = False
