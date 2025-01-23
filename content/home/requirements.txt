@@ -1,5 +1,11 @@
+# PyData theme for Sphinx.
+# Reference: https://pydata-sphinx-theme.readthedocs.io
+pydata-sphinx-theme
+
 myst-parser
 sphinx_markdown_tables
+
+# TODO: Remove this dependency once we have fully migrated to the PyData theme.
 sphinx_rtd_theme
 
 # Sphinx extension that handles redirects.

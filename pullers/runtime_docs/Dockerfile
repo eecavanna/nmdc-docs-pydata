@@ -51,10 +51,7 @@ RUN cd nmdc-runtime && \
         "site_url": "http://localhost:8000/",\
         "theme": {"favicon": "assets/images/favicon.ico"},\
         "extra": {\
-          "analytics": {\
-            "provider": "google",\
-            "property": "G-VH6HKVLCWN"\
-          }\
+          "analytics": {}\
         }\
     }' | mkdocs build -f -
 

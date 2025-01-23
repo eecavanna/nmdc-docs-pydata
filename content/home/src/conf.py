@@ -57,7 +57,7 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'pydata_sphinx_theme'
 
 # The string you want Sphinx to append to the HTML `<title> tag of each page.
 # Docs: https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_title
@@ -134,5 +134,67 @@ html_context = {
 #
 # Reference: https://pypi.org/project/sphinxcontrib-googleanalytics/
 #
-googleanalytics_id: str = "G-VH6HKVLCWN"
-googleanalytics_enabled: bool = True
+googleanalytics_id: str = ""
+googleanalytics_enabled: bool = False
+
+# -- PyData theme for Sphinx ------------------------------
+#
+# References:
+# - https://pydata-sphinx-theme.readthedocs.io
+# - https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/layout.html#built-in-components-to-insert-into-sections
+#
+html_theme_options = {
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/microbiomedata",
+            "icon": "fa-brands fa-github",
+            "type": "fontawesome",
+        },
+        # {
+        #     # Note: The FontAwesome website does list an icon called `fa-square-bluesky`,
+        #     #       but this PyData website does not render it. I suspect the FontAwesome version
+        #     #       being used by the PyData website is slightly out of date.
+        #     #       Reference: https://fontawesome.com/icons/square-bluesky?f=brands&s=solid
+        #     "name": "Bluesky",
+        #     "url": "https://bsky.app/profile/microbiomedata.org",
+        #     "icon": "_static/images/square-bluesky-brands-solid.svg",
+        #     "type": "local",
+        # },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/microbiomedata",
+            "icon": "fa-brands fa-square-instagram",
+            "type": "fontawesome",
+        },
+        {
+            "name": "YouTube",
+            "url": "https://www.youtube.com/channel/UCyBqKc46NQZ_YgZlKGYegIw/featured",
+            "icon": "fa-brands fa-square-youtube",
+            "type": "fontawesome",
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/company/microbiomedata/",
+            "icon": "fa-brands fa-linkedin",
+            "type": "fontawesome",
+        },
+        {
+            "name": "Twitter/X",
+            "url": "https://twitter.com/microbiomedata",
+            "icon": "fa-brands fa-square-x-twitter",
+            "type": "fontawesome",
+        },
+    ],
+    "external_links": [
+        {"name": "NMDC Website", "url": "https://microbiomedata.org"},
+    ],
+    "secondary_sidebar_items": ["page-toc", "edit-this-page"],
+    "use_edit_page_button": True,
+    "navigation_depth": 3,
+    "show_nav_level": 3,
+}
+html_sidebars = {
+    "**": ["sidebar-nav-bs"],
+    # "index": ["navbar-nav"],
+}
